@@ -215,6 +215,117 @@ body {
 .continue-button:hover {
     background-color: var(--background-two);
 }
+@media screen and (max-width: 600px) {
+
+    body {
+        background-color: #ffffff;
+    }
+
+    .page-container {
+        display: block;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .result-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: none;
+        min-height: 100vh;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: visible;
+    }
+
+    /* Result panel moves to the top */
+
+    .result-panel {
+        width: 100%;
+        min-height: 676px;
+        padding: 49px 28px 60px;
+        border-radius: 0 0 48px 48px;
+    }
+
+    .result-heading {
+        font-size: 24px;
+        margin-bottom: 47px;
+    }
+
+    .score-circle {
+        width: 270px;
+        max-width: 75vw;
+        height: 270px;
+        margin-bottom: 0;
+    }
+
+    .score {
+        font-size: 82px;
+    }
+
+    .score-total {
+        font-size: 24px;
+        margin-top: 8px;
+    }
+
+    .result-description {
+        margin-top: 53px;
+        max-width: 390px;
+    }
+
+    .result-description h2 {
+        font-size: 36px;
+        margin-bottom: 21px;
+    }
+
+    .result-description p {
+        font-size: 21px;
+        line-height: 1.65;
+        color: #c9c4ff;
+    }
+    .summary-panel {
+        width: 100%;
+        padding: 48px 8% 35px;
+        flex: 1;
+    }
+
+    .summary-heading {
+        font-size: 28px;
+        margin-bottom: 35px;
+    }
+
+    .summary-list {
+        gap: 28px;
+    }
+
+    .summary-item {
+        min-height: 105px;
+        padding: 20px 27px;
+        border-radius: 19px;
+    }
+
+    .category {
+        gap: 17px;
+        font-size: 23px;
+    }
+
+    .category svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .category-score {
+        gap: 7px;
+        font-size: 24px;
+    }
+
+    .continue-button {
+        min-height: 105px;
+        margin-top: 45px;
+        padding: 22px;
+        font-size: 28px;
+    }
+}
 /*SMALL MOBILE SCREENS*/
 @media screen and (max-width: 380px) {
     .result-panel {
