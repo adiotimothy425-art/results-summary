@@ -80,7 +80,7 @@ body{
   max-width: 230px;
 }
 .summary-panel{
-  padding: 36px 28px;
+  padding: 36px 24px;
   display: flex;
   flex-direction: column;
 }
@@ -218,5 +218,10 @@ body{
   .summary-item{
     padding: 10px 12px;
     font-size: 13px;
+  }
+  body{
+    display: block;
+    padding: 0;
+    background-color: var(--white);
   }
 }
