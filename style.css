@@ -188,7 +188,7 @@ body{
     font-size: 16px;
   }
   .summary-panel {
-    padding: 30px 24px;
+    padding: 0;
   }
   .summary-panel h2 {
     margin-bottom: 22px;
@@ -198,7 +198,7 @@ body{
   }
   .summary-item{
     min-height: 58px;
-    padding: 16px;
+    padding: 0;
     font-size: 15px;
   }
   .continue-btn{
