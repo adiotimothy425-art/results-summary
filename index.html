@@ -1,82 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./style.css">
-  <title>Results summary component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <main class="page-container">
+      <section class="result-card">
+        <!-- LEFT SIDE: RESULT -->
+        <div class="result-panel">
+          <h1 class="result-heading">Your Result</h1>
 
-  
-</head>
-<body>
-<div class="results-card">
-  <!-- RESULTS PANEL -->
-   <div class="result-panel">
-    <h2>Your Result</h2>
-    <div class="score-circle">
-      <div class="total-score"> 76</div>
-      <div score-total>of 100</div>
-    </div>
-    <h1>Great</h1>
-    <p class="result-message">You scored higher than 65% of <br> the people who have taken <br>these tests.</p>
-   </div>
-   <!-- SUMMARY PANEL -->
-    <div class="summary-panel">
-      <h2>Summary</h2>
-      <div class="summary-list">
-        <div class="summary-item reaction">
-          <div class="category">
-            <div class="category-icon">
-              <img src="./assets/images/icon-reaction.svg" alt="">
-            </div>
-            <div>Reaction</div>
+          <div class="score-circle">
+            <span class="score">76</span>
+            <span class="score-total">of 100</span>
           </div>
-          <p><strong>80</strong>
-          <div>/ 100</div></p>
+
+          <div class="result-description">
+            <h2>Great</h2>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
           </div>
-          <div class="summary-item memory">
-            <div class="category">
-              <div category-icon>
-                <img src="./assets/images/icon-memory.svg" alt="">
+        </div>
+
+        <!-- RIGHT SIDE: SUMMARY -->
+        <div class="summary-panel">
+          <h2 class="summary-heading">Summary</h2>
+
+          <div class="summary-list">
+            <!-- REACTION -->
+            <div class="summary-item reaction">
+              <div class="category">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M13 2 4 14h7l-1 8 10-13h-7l1-7z" />
+                </svg>
+                <span>Reaction</span>
               </div>
-              <div> Memory</div>
+
+              <div class="category-score">
+                <strong>80</strong>
+                <span>/ 100</span>
+              </div>
             </div>
-            <p><strong>92</strong>
-            <div>/ 100</div></p>
+
+            <!-- MEMORY -->
+            <div class="summary-item memory">
+              <div class="category">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 3a4 4 0 0 0-7 3
+                                4 4 0 0 0-1 7 4 4 0 0 0 3 6
+                                4 4 0 0 0 5 2z"
+                  />
+                  <path
+                    d="M12 3a4 4 0 0 1 7 3
+                                4 4 0 0 1 1 7 4 4 0 0 1-3 6
+                                4 4 0 0 1-5 2z"
+                  />
+                  <path
+                    d="M12 3v18M7 9h3m4 0h3
+                                M7 15h3m4 0h3"
+                  />
+                </svg>
+                <span>Memory</span>
+              </div>
+
+              <div class="category-score">
+                <strong>92</strong>
+                <span>/ 100</span>
+              </div>
+            </div>
+
+            <!-- VERBAL -->
+            <div class="summary-item verbal">
+              <div class="category">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M21 11.5a8.4 8.4 0 0 1-.9
+                                3.8 8.5 8.5 0 0 1-7.6 4.7
+                                8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7
+                                a8.4 8.4 0 0 1-.9-3.8
+                                8.5 8.5 0 0 1 4.7-7.6
+                                8.4 8.4 0 0 1 3.8-.9h.5
+                                a8.5 8.5 0 0 1 8 8z"
+                  />
+                  <path d="M8 12h8" />
+                </svg>
+                <span>Verbal</span>
+              </div>
+
+              <div class="category-score">
+                <strong>61</strong>
+                <span>/ 100</span>
+              </div>
+            </div>
+
+            <!-- VISUAL -->
+            <div class="summary-item visual">
+              <div class="category">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M2 12s3.6-7 10-7
+                                10 7 10 7-3.6 7-10 7
+                                -10-7-10-7z"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+                <span>Visual</span>
+              </div>
+
+              <div class="category-score">
+                <strong>73</strong>
+                <span>/ 100</span>
+              </div>
+            </div>
           </div>
 
-          <div class="summary-item verbal">
-            <div class="category">
-              <div class="category-icon">
-                <img src="./assets/images/icon-verbal.svg" alt="">
-              </div>
-              <div>Verbal</div>
-            </div>
-            <p><strong> 61</strong>
-            <div>/ 100</div></p>
-          </div>
-          
-          <div class="summary-item visual">
-            <div class="category">
-              <div class="category-icon">
-                <img src="./assets/images/icon-visual.svg" alt="">
-              </div>
-              <div>Visual</div>
-            </div>
-            <p><strong> 72</strong> 
-            <div>/ 100</div></p>
-          </div>
-          </div>
+          <button class="continue-button" type="button">Continue</button>
+        </div>
+      </section>
+    </main>
 
-          <button class="continue-btn"> Continue</button>
-    </div>
-</div>
-  
-  <!-- <footer class="attribution">
+    <!-- <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </footer> -->
-</body>
+  </body>
 </html>
