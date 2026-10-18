@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(256, 72%, 46%, 1);
+  --persian-blue: hsla(241, 72%, 46%, 0);
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+/* font-family: "Hanken Grotesk", sans-serif; */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pale-blue);
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 24px;
+  margin: 50px;
+}
+.results-card{
+  width: 100%;
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: var(--white);
+  border-radius: 28px;
+  box-shadow: 0 20px 45px rgba(61, 92, 160, 0.12);
+}
+.result-panel{
+  background-color: var(--violet-blue);
+  color: var(--white);
+  text-align: center;
+  padding: 36px 28px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.score-circle{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  background-color: var(--cobalt-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 37px;
+  margin-top: 20px;
+}
+.total-score{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+.score-total{
+  color: var(--light-lavender);
+  font-size: 16px;
+  margin-top: 5px;
+}
+.result-panel h1{
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+.result-message{
+  color: var(--light-lavender);
+  font-size: 11px;
+  max-width: 230px;
+}
+.summary-panel{
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+}
+.summary-panel h2{
+  color: var(--dark-gray-blue);
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+.summary-list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.summary-item{
+  min-height: 50px;
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 14px;
+}
+.category{
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+}
+.category-icon{
+  font-size: 19px;
+}
+.summary-item p{
+  white-space: nowrap;
+  color: var(--dark-gray-blue);
+}
+.summary-item p strong{
+  font-weight: 700;
+}
+.summary-item p div{
+  color: var(--dark-gray-blue);
+}
+.reaction{
+  color: var(--light-red);
+  background-color: #fff5f5;
+}
+.memory{
+  color: var(--orangey-yellow);
+  background-color: #fffaf1;
+}
+.verbal{
+  color: var(--green-teal);
+  background-color: #effbf7;
+}
+.visual{
+  color: var(--cobalt-blue);
+  background-color: #f3f2fc;
+}
+.continue-btn{
+  width: 100%;
+  border-radius: 40px;
+  padding: 15px;
+  margin-top: 28px;
+  background: var(--dark-gray-blue);
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.continue-btn:hover{
+  background-color: var(--light-slate-blue);
+}
+@media screen  and (max-width: 600px) {
+  body{
+    display: block;
+    padding: 0;
+    background-color: var(--white);
+  }
+  .results-card{
+    max-width: 100%;
+    grid-template-columns: 1fr;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .result-panel{
+    border-radius: 0 0 32px 32px;
+    padding: 34px 28px 40px;
+  }
+  .result-panel h2{
+    margin-bottom: 24px;
+  }
+  .score-circle{
+    width: 175px;
+    height: 175px;
+    margin-bottom: 28px;
+  }
+  .total-score{
+    font-size: 64px;
+  }
+  .result-panel h1{
+    font-size: 28px;
+  }
+  .result-message{
+    max-width: 300px;
+    font-size: 16px;
+  }
+  .summary-panel {
+    padding: 30px 24px;
+  }
+  .summary-panel h2 {
+    margin-bottom: 22px;
+  }
+  .summary-list {
+    gap: 14px;
+  }
+  .summary-item{
+    min-height: 58px;
+    padding: 16px;
+    font-size: 15px;
+  }
+  .continue-btn{
+    margin-top: 26px;
+    padding: 17px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .result-panel{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .summary-panel{
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .summary-item{
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+}
