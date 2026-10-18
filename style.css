@@ -95,7 +95,7 @@ body {
 .score-total {
     font-size: 17px;
     font-weight: 600;
-    color: #aaa0ff;
+    color: var(--background-one);
     margin-top: 4px;
 }
 /*RESULT DESCRIPTION*/
@@ -124,7 +124,7 @@ body {
 .summary-heading {
     font-size: 21px;
     font-weight: 800;
-    color: #303b5a;
+    color: var(--Dark-gray-blue);
     margin-bottom: 27px;
 }
 /* SUMMARY ITEMS */
@@ -169,11 +169,11 @@ body {
     font-size: 15px;
 }
 .category-score strong {
-    color: #303b5a;
+    color: var(--Dark-gray-blue);
     font-weight: 800;
 }
 .category-score span {
-    color: #9295a5;
+    color: var(--Light-lavender);
     font-weight: 500;
 }
 /* Individual colors */
@@ -191,7 +191,7 @@ body {
 }
 .visual {
     background-color: #f4f3fc;
-    color: #343fa1;
+    color: var(--Cobalt-blue);
 }
 /* CONTINUE BUTTON*/
 .continue-button {
@@ -218,7 +218,7 @@ body {
 @media screen and (max-width: 600px) {
 
     body {
-        background-color: #ffffff;
+        background-color: var(--White);
     }
 
     .page-container {
@@ -281,7 +281,7 @@ body {
     .result-description p {
         font-size: 21px;
         line-height: 1.65;
-        color: #c9c4ff;
+        color: var(--Light-lavender);
     }
     .summary-panel {
         width: 100%;
