@@ -167,7 +167,7 @@ body{
   }
   .result-panel{
     border-radius: 0 0 32px 32px;
-    padding: 34px 28px 40px;
+    padding: 0;
   }
   .result-panel h2{
     margin-bottom: 24px;
